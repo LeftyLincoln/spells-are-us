@@ -28,12 +28,17 @@ const App = () => {
     setFavorites([...favorites, favSpell])
   }
 
+  const deleteSpell = (id) => {
+    const leftFavorites = favorites.filter(spell => spell.id !== id)
+    setFavorites(leftFavorites)
+  }
+
 
   return (
     <>
       <Nav />
       <SpellContainer spells={spells} addFavorite={addFavorite}/>
-      {/* <FavoriteContainer favorites={favorites}/>
+      {/* <FavoriteContainer favorites={favorites} deleteSpell={deleteSpell}/>
       <WandInfo /> */}
       {error}
     </>
