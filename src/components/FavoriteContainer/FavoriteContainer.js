@@ -2,9 +2,10 @@ import React from "react"
 import { FavoriteCard } from "../FavoriteCard/FavoriteCard"
 
 export const FavoriteContainer = ({favorites, deleteSpell}) => {
+  console.log("favorites", favorites)
   const favoriteSpells = favorites.map(favorite => {
     return <FavoriteCard
-    title={favorite.title}
+    name={favorite.name}
     description={favorite.description}
     deleteSpell={deleteSpell}
     key={favorite.id}
