@@ -7,6 +7,7 @@ const App = () => {
   
   const [spells, setSpells] = useState([])
   const [error, setError] = useState('')
+  const [favorites, setFavorites] =useState([])
   
   const getSpells = async () => {
     try {
@@ -22,13 +23,17 @@ const App = () => {
     getSpells()
   }, [])
   
+  const addFavorite = (id) => {
+    const favSpell = spells.filter(spell => spell.id === id)
+    setFavorites([...favorites, favSpell])
+  }
 
 
   return (
     <>
       <Nav />
-      <SpellContainer spells={spells}/>
-      {/* <FavoriteContainer />
+      <SpellContainer spells={spells} addFavorite={addFavorite}/>
+      {/* <FavoriteContainer favorites={favorites}/>
       <WandInfo /> */}
       {error}
     </>
