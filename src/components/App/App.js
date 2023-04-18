@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from "react"
 import { Nav } from "../Nav/Nav"
 import { SpellContainer } from "../SpellContainer/SpellContainer"
-
+import { FavoriteContainer } from "../FavoriteContainer/FavoriteContainer"
+import { WandInfo } from "../WandInfo/WandInfo"
 
 const App = () => {
   
   const [spells, setSpells] = useState([])
   const [error, setError] = useState('')
-  const [favorites, setFavorites] =useState([])
+  const [favorites, setFavorites] = useState([])
   
   const getSpells = async () => {
     try {
@@ -35,13 +36,14 @@ const App = () => {
 
 
   return (
-    <>
+    <main>
       <Nav />
       <SpellContainer spells={spells} addFavorite={addFavorite}/>
-      {/* <FavoriteContainer favorites={favorites} deleteSpell={deleteSpell}/>
-      <WandInfo /> */}
+      <FavoriteContainer favorites={favorites} deleteSpell={deleteSpell}/>
+      {/* <WandInfo /> */}
       {error}
-    </>
+    </main>
+
   )
 }
 

@@ -1,11 +1,12 @@
 import React from "react"
 
-export const FavoriteCard = ({title, description, deleteSpell}) => {
+export const FavoriteCard = ({title, description, id, deleteSpell}) => {  
+  
   return (
     <div>
       <h1>{title}</h1>
       <div>{description}</div>
-      <button>Delete Spell</button>
+      <button onClick={() => deleteSpell(id)}>Delete Spell</button>
     </div>
   )
 }
