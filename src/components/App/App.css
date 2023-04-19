@@ -1,5 +1,5 @@
 html, body {
-  background-image: url("../../../public/hogwarts.jpeg");
+  background-image: url("../../assets/hogwarts.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }

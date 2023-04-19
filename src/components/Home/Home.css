@@ -3,8 +3,28 @@
   justify-content: center;
 }
 
-/* .home-page-button {
-display: flex;
-height:40vh;
-width:40vw
-} */
+.wand-image {
+  margin-top: 15px;
+  height: 400px;
+}
+
+.wand-image:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: 0.2ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .wand-image {
+    animation: wand-image-spin infinite 7s linear;
+  }
+}
+
+@keyframes wand-image-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

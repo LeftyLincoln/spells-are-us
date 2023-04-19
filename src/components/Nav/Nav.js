@@ -20,7 +20,7 @@ export const Nav = () => {
             <button>Wand Info Bonus</button>
           </NavLink>
         </div>
-      <h2>🪄 Welcome Muggle, your magical spells await 🪄</h2>
+      <h2> Welcome Muggle, Find your Spells here... </h2>
     </div>
   )
 }
