@@ -24,12 +24,12 @@ export const WandInfo = () => {
               Materials: Most wands were long, thin rods of wood with a magical
               substance embedded into their core.
             </div>
-            <div classname="magical-substances">
-              Magical Substances: There are others, but these are the main three
-              1. Unicorn Hair : Unicorn hair generally produced the most
-              consistent magic 2. Dragon Heartstring: As a rule, dragon
+            <div classname="magic-substance">
+              Magical Substances: The Main Three
+              <br></br> 1. Unicorn Hair : Unicorn hair generally produced the most
+              consistent magic <br></br> 2. Dragon Heartstring: As a rule, dragon
               heartstrings produced wands with the most power, and which were
-              capable of the most flamboyant spells 3. Phoenix Feather: Rarest,
+              capable of the most flamboyant spells<br></br> 3. Phoenix Feather: Rarest,
               capable of the widest range of magic
             </div>
           </div>

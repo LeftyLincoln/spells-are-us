@@ -3,11 +3,7 @@
   flex-direction: column;
   border: 4px solid black;
   margin: 10px;
-}
-
-.wand-header {
-  text-align: center;
-  margin:10px
+  height: 50vh
 }
 
 .fact-container {
@@ -16,20 +12,24 @@
   align-items: center;
 }
 
-.facts {
-  display: flex;
-}
-
 .quote {
   margin:10px
 }
 
+.facts {
+  display: flex;
+}
+
+
 .magical-substances-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 10px
 }
-.magical-substances {
+
+.magic-substance {
   display: flex;
+  border: 2px solid black;
 }
 
 h2 {
