@@ -1,0 +1,20 @@
+
+
+.spell-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid black;
+  width: 45%;
+  margin: 10px;
+  border-radius: 7px;
+}
+
+.spell-card:hover {
+  scale: 1.05;
+  transition: 0.5ms;
+}
+
+.spell-button {
+  width: 70%;
+}

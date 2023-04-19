@@ -1,0 +1,10 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+}
+
+/* .home-page-button {
+display: flex;
+height:40vh;
+width:40vw
+} */
