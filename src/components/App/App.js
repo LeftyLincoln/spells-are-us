@@ -3,6 +3,8 @@ import { Nav } from "../Nav/Nav"
 import { SpellContainer } from "../SpellContainer/SpellContainer"
 import { FavoriteContainer } from "../FavoriteContainer/FavoriteContainer"
 import { WandInfo } from "../WandInfo/WandInfo"
+import { Home } from "../Home/Home"
+import "./App.css"
 
 const App = () => {
   
@@ -25,7 +27,7 @@ const App = () => {
   }, [])
   
   const addFavorite = (id) => {
-    const favSpell = spells.filter(spell => spell.id === id)
+    const favSpell = spells.find(spell => spell.id === id)
     setFavorites([...favorites, favSpell])
   }
 
@@ -41,6 +43,7 @@ const App = () => {
       <SpellContainer spells={spells} addFavorite={addFavorite}/>
       <FavoriteContainer favorites={favorites} deleteSpell={deleteSpell}/>
       {/* <WandInfo /> */}
+      <Home />
       {error}
     </main>
 
