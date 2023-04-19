@@ -5,6 +5,7 @@ import { FavoriteContainer } from "../FavoriteContainer/FavoriteContainer"
 import { WandInfo } from "../WandInfo/WandInfo"
 import { Home } from "../Home/Home"
 import "./App.css"
+import { Switch, Route, Redirect } from "react-router-dom"
 
 const App = () => {
   
@@ -40,10 +41,13 @@ const App = () => {
   return (
     <main>
       <Nav />
-      <SpellContainer spells={spells} addFavorite={addFavorite}/>
-      <FavoriteContainer favorites={favorites} deleteSpell={deleteSpell}/>
-      {/* <WandInfo /> */}
-      <Home />
+      <Switch>
+        <Route path="/allSpells" render={() =>  <SpellContainer spells={spells} addFavorite={addFavorite}/>} />
+        <Route path="/favoriteSpells" render={() =>  <FavoriteContainer favorites={favorites} deleteSpell={deleteSpell}/>} />
+        <Route path="/wandInfo" render={() => <WandInfo /> } />
+        <Route path="/home" render={() =>  <Home />} />
+        <Redirect from="*" to="/home"/> 
+      </Switch>
       {error}
     </main>
 
