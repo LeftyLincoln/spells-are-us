@@ -1,0 +1,17 @@
+.wand-info {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  margin: 10px;
+  height: 80%;
+  width: 90vw;
+  border-radius: 5px;
+}
+
+.wand-info:hover {
+  background-color: lightgray;
+}
+
+.facts, .famous-wand, .wand-maker, .materials, .substances, .quote, h2 {
+  margin:10px
+}

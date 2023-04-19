@@ -6,13 +6,15 @@
   width: 45%;
   margin: 10px;
   border-radius: 7px;
+  height:30vh
 }
 
 .favorite-card:hover {
   scale: 1.05;
   transition: 0.5ms;
+  background-color: lightgray;
 }
 
 .favorite-button {
-  width: 70%;
+  width: 50%;
 }

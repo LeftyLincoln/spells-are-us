@@ -14,6 +14,6 @@ export const FavoriteContainer = ({favorites, deleteSpell}) => {
   })
   const favLogic = !favorites.length ? <h1>You haven't saved any spells yet... </h1> : favoriteSpells
   return (
-    <div>{favLogic}</div>
+    <div className="favorite-container">{favLogic}</div>
   )
 }
