@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 4px solid black;
+  border: 6px groove gray;
   width: 45%;
   margin: 10px;
-  border-radius: 7px;
+  border-radius: 30px;
 }
 
 .spell-card:hover {

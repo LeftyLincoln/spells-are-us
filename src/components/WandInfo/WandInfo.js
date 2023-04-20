@@ -3,32 +3,28 @@ import "./WandInfo.css";
 
 export const WandInfo = () => {
   return (
-    <div className="wand-info-container">
-      <div className="wand-info">
+    <div>
+    <div className="wand-info-title">
+      <img className="wand-image-info" src={require("../../assets/wandImage.png")} alt="wand" />
       <h2 className="quote">
         "The wand chooses the wizard... it's not always clear why."
-      </h2>
-      <div className="facts">
-        A wand is a magical object through which a wizard/witch channels
-        his/her magical powers. Most spells are done with the aid of a wand,
-        even though it is possible to perform magic without one
-      </div>
-      <div className="famous-wand">
-          Most Famous Wand: The Elder Wand, one of the three deathly hallows
-          objects
-      </div>
-      <div className="wand-maker">Famous Wand Makers: Ollivander & Mykew Gregorovitch </div>
-      <div className="materials">
-        Materials: Most wands were long, thin rods of wood with a magical
-        substance embedded into their core.
-        Magical Substances: The Main Three
-        <br></br> 1. Unicorn Hair : Unicorn hair generally produced the most
-        consistent magic <br></br> 2. Dragon Heartstring: As a rule, dragon
-        heartstrings produced wands with the most power, and which were
-        capable of the most flamboyant spells<br></br> 3. Phoenix Feather: Rarest,
-        capable of the widest range of magic
-      </div>
-      </div>
+      </h2> 
+      <img className="wand-image-info" src={require("../../assets/wandImage.png")} alt="wand" />
+    </div>  
+    <h3 className="about">
+      A wand is a magical object through which a wizard/witch channels
+      his/her magical powers. Most spells are done with the aid of a wand,
+      even though it is possible to perform magic without one
+    </h3>
+    <div className="facts">
+      <h3>Facts:</h3>
+      <h3>Most Powerful: The Elder Wand </h3>
+      <h3>Wand Makers: Ollivander & Gregorovitch are the best known makers</h3>
+      <h3>Made Of: Most wands were long, thin rods of wood with a magical
+        substance embedded into their core.</h3>
+      <h3>Main Magical Substances: Unicorn Hair, Dragon Heartstring, Phoenix Feather</h3>
     </div>
-  );
-};
+    </div>
+
+)
+}
