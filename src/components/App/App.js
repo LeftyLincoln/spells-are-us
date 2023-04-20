@@ -12,7 +12,7 @@ const App = () => {
   const [spells, setSpells] = useState([])
   const [error, setError] = useState('')
   const [favorites, setFavorites] = useState([])
-  
+
   const getSpells = async () => {
     try {
       const response = await fetch('https://hp-api.onrender.com/api/spells')
@@ -29,7 +29,9 @@ const App = () => {
   
   const addFavorite = (id) => {
     const favSpell = spells.find(spell => spell.id === id)
-    setFavorites([...favorites, favSpell])
+    if (!favorites.includes(favSpell)) {
+      setFavorites([...favorites, favSpell])
+    }
   }
 
   const deleteSpell = (id) => {
