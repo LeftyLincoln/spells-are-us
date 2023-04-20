@@ -10,16 +10,16 @@ export const Nav = () => {
       </NavLink>
         <div className="buttons">
           <NavLink to="/home">
-            <button>Home</button>
+            <button className="home-button">Home</button>
           </NavLink>
           <NavLink to="/allSpells">
-            <button>All Spells</button>
+            <button className="allSpells-button">All Spells</button>
           </NavLink>
           <NavLink to="/favoriteSpells">
-            <button>Favorite Spells</button>
+            <button className="fav-spell-button">Favorite Spells</button>
           </NavLink>
           <NavLink to="/wandInfo">
-            <button>Wand Info Bonus</button>
+            <button className="wand-info-button">Wand Info Bonus</button>
           </NavLink>
         </div>
     </div>
