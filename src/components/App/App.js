@@ -19,7 +19,7 @@ const App = () => {
       const allSpells = await response.json()
       setSpells(allSpells)
     } catch (error) {
-      setError(`Sorry there was a ${error}. Please try again later`)
+      setError(`Sorry there was a ${error.message}. Please try again later`)
     }
   }
 
@@ -43,6 +43,7 @@ const App = () => {
   return (
     <main>
       <Nav />
+      {error && <p>{error}</p>}
       <Switch>
         <Route path="/allSpells" render={() =>  <SpellContainer spells={spells} addFavorite={addFavorite}/>} />
         <Route path="/favoriteSpells" render={() =>  <FavoriteContainer favorites={favorites} deleteSpell={deleteSpell}/>} />
@@ -50,7 +51,6 @@ const App = () => {
         <Route path="/home" render={() =>  <Home />} />
         <Redirect from="*" to="/home"/> 
       </Switch>
-      {error}
     </main>
 
   )

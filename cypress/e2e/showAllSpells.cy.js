@@ -22,4 +22,5 @@ describe('Show All Spells', () => {
     cy.get('.spells-container > :nth-child(5)').contains("Anapneo")
     cy.get('.spells-container > :nth-child(5)').contains("Clears someone's airway")
   })
+
 })
