@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Roboto+Mono:wght@300&display=swap');
+
 .wand-info {
   display: flex;
   flex-direction: column;
@@ -6,6 +8,7 @@
   height: 80%;
   width: 90vw;
   border-radius: 5px;
+  
 }
 
 .wand-info:hover {
@@ -13,5 +16,7 @@
 }
 
 .facts, .famous-wand, .wand-maker, .materials, .substances, .quote, h2 {
-  margin:10px
+  margin:10px;
+  font-family: 'Baskervville', serif;
+  font-size: 18px;
 }
