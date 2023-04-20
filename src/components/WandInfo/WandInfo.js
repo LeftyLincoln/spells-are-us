@@ -16,7 +16,7 @@ export const WandInfo = () => {
           Most Famous Wand: The Elder Wand, one of the three deathly hallows
           objects
       </div>
-      <div className="wand-maker">Main Wand Makers: Ollivander & Mykew Gregorovitch </div>
+      <div className="wand-maker">Famous Wand Makers: Ollivander & Mykew Gregorovitch </div>
       <div className="materials">
         Materials: Most wands were long, thin rods of wood with a magical
         substance embedded into their core.

@@ -3,5 +3,5 @@
   flex-wrap: wrap;
   height: 500px;
   overflow: auto;
+  justify-content: center;
 }
-

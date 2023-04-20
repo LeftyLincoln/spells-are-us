@@ -17,4 +17,11 @@
 
 .favorite-button {
   width: 50%;
+  margin-top: 5px;
+}
+
+.favorite-button:hover {
+  background-color: rgba(112, 112, 190, 0.68);
+  scale: 1.05;
+  transition: 0.5ms;
 }
