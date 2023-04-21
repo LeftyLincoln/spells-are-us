@@ -18,8 +18,8 @@ export const WandInfo = () => {
     </h3>
     <div className="facts">
       <h3>Facts:</h3>
-      <h3> <u>Most Powerful:</u> The Elder Wand </h3>
-      <h3> <u>Wand Makers:</u> Ollivander & Gregorovitch are the best known makers</h3>
+      <h3> <u>Most Powerful:</u><br></br> The Elder Wand </h3>
+      <h3> <u>Wand Makers:</u><br></br> Ollivander & Gregorovitch are the best known makers</h3>
       <h3> <u>Made Of:</u><br></br>Most wands were long, thin rods of wood with a magical
         substance embedded into their core.</h3>
       <h3> <u>Substances:</u><br></br> Unicorn Hair, Dragon Heartstring, Phoenix Feather & More</h3>

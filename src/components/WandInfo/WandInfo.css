@@ -49,5 +49,26 @@ justify-content: center;
   border-radius: 20px;
   width:95%;
   text-align: center;
-  margin-left:15px
+  margin-left:15px;
+  overflow: auto;
+}
+
+@media screen and (max-width: 640px) {
+  .facts {
+    flex-direction: column;
+    margin-left:5px;
+  }
+
+  .wand-image-info {
+    height: 60px
+  }
+
+  .quote {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 }
