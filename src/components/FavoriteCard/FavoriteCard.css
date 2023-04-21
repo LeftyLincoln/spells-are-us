@@ -1,28 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Roboto+Mono:wght@300&display=swap');
+
+
 .favorite-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 6px groove rgb(56, 211, 203);
-  width: 40%;
+  width: 45%;
   margin: 10px;
   border-radius: 12px;
-  height:30vh
+  max-height: 400px;
 }
 
 .favorite-card:hover {
   scale: 1.05;
   transition: 0.5ms;
-  background-color: rgb(62, 194, 187);
+  background-color: rgb(146, 205, 202);
 }
 
 .favorite-button {
-  width: 50%;
-  margin-top: 5px;
+  margin:10px;
   background-color: rgb(152, 179, 177);
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .favorite-button:hover {
   background-color: rgb(76, 128, 124);
   scale: 1.05;
   transition: 0.5ms;
+}
+
+.favorite-description {
+  font-family: 'Baskervville', serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+.favorite-header {
+  margin: 5px
 }

@@ -1,9 +1,19 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./SpellCard.css"
 import { useState } from "react"
 
-export const SpellCard = ({name, description, id, addFavorite}) => {
+export const SpellCard = ({name, description, id, addFavorite, favorites}) => {
   const [disable, setDisable] = useState(false)
+  
+  useEffect(() => {
+    const isFavorite = favorites.find(favorite => {
+      return favorite.id === id
+    })
+    if (isFavorite) {
+      setDisable(true)
+    }
+  }, [])
+
 
   return (
     <div className="spell-card">
