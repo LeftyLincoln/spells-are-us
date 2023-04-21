@@ -4,3 +4,10 @@
   height: 560px;
   overflow: auto;
 }
+
+
+@media screen and (max-width: 640px) {
+  .spells-container {
+    justify-content: center;
+  }
+}

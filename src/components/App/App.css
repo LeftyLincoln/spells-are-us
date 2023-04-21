@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-
-
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
 
-html, body {
+* {
+  font-family: 'Henny Penny', cursive;
+}
+
+.app {
   background-image: url("../../assets/hogwarts.jpeg");
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   background-size: cover;
+  min-height:100vh;
 }
 
 body {
@@ -14,6 +17,3 @@ body {
   width: 100vw;
 }
 
-* {
-  font-family: 'Henny Penny', cursive;
-}

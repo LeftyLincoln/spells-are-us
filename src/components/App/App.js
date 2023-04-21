@@ -41,7 +41,7 @@ const App = () => {
 
 
   return (
-    <main>
+    <main className="app">
       <Nav />
       {error && <p>{error}</p>}
       <Switch>

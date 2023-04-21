@@ -14,6 +14,8 @@
 .wand-image:hover {
   scale: 1.1;
   transition: 0.6ms;
+  background: linear-gradient(rgba(247, 247, 36, 0.768), #33333300 25%);
+  border-radius: 75px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -28,5 +30,16 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .wand-image {
+    height: 250px
+  }
+
+  .home-title {
+    font-size: 16px;
   }
 }
