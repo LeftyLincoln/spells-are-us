@@ -12,7 +12,7 @@ export const SpellCard = ({name, description, id, addFavorite}) => {
       <button className="spell-button" onClick={() => {
         addFavorite(id)
         setDisable(true)
-      }} disabled={disable}>Add Spell to Favorites</button>
+      }} disabled={disable}>⭐️</button>
     </div>
   )
 }
