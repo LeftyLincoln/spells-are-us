@@ -32,3 +32,14 @@
     transform: rotate(360deg);
   }
 }
+
+
+@media screen and (max-width: 400px) {
+  .wand-image {
+    height: 250px
+  }
+
+  .home-title {
+    font-size: 16px;
+  }
+}
