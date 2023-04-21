@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import "./SpellCard.css"
 import { useState } from "react"
+import PropTypes from 'prop-types';
 
 export const SpellCard = ({name, description, id, addFavorite, favorites}) => {
   const [disable, setDisable] = useState(false)
@@ -27,3 +28,10 @@ export const SpellCard = ({name, description, id, addFavorite, favorites}) => {
   )
 }
 
+SpellCard.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  addFavorite: PropTypes.func.isRequired, 
+  favorites: PropTypes.array.isRequired
+}

@@ -1,6 +1,7 @@
 import React from "react"
 import { FavoriteCard } from "../FavoriteCard/FavoriteCard"
 import "./FavoriteContainer.css"
+import PropTypes from 'prop-types';
 
 export const FavoriteContainer = ({favorites, deleteSpell}) => {
   const favoriteSpells = favorites.map(favorite => {
@@ -16,4 +17,9 @@ export const FavoriteContainer = ({favorites, deleteSpell}) => {
   return (
     <div className="favorite-container">{favLogic}</div>
   )
+}
+
+FavoriteContainer.propTypes = {
+  deleteSpell: PropTypes.func.isRequired,
+  favorites: PropTypes.array.isRequired
 }
