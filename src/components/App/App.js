@@ -45,7 +45,7 @@ const App = () => {
       <Nav />
       {error && <p>{error}</p>}
       <Switch>
-        <Route path="/allSpells" render={() =>  <SpellContainer spells={spells} addFavorite={addFavorite}/>} />
+        <Route path="/allSpells" render={() =>  <SpellContainer spells={spells} addFavorite={addFavorite} favorites={favorites}/>} />
         <Route path="/favoriteSpells" render={() =>  <FavoriteContainer favorites={favorites} deleteSpell={deleteSpell}/>} />
         <Route path="/wandInfo" render={() => <WandInfo /> } />
         <Route path="/home" render={() =>  <Home />} />

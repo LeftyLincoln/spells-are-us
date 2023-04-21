@@ -3,6 +3,7 @@ import "./Home.css"
 import { NavLink } from "react-router-dom"
 
 export const Home = () => {
+
   return (
     <div className="home-page">
        <h2> Welcome Muggle, Enter Below... </h2>

@@ -13,7 +13,7 @@ export const WandInfo = () => {
     </div>  
     <h3 className="about">
       A wand is a magical object through which a wizard/witch channels
-      his/her magical powers. Most spells are done with the aid of a wand,
+      his/her magical powers. <br></br> Most spells are done with the aid of a wand,
       even though it is possible to perform magic without one
     </h3>
     <div className="facts">
