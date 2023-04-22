@@ -11,6 +11,8 @@
   cursor: pointer;
   margin: 15px;
   color: black;
+  font-size: 48px;
+  margin-top: 0px;
 }
 
 .nav-header:hover {
@@ -61,5 +63,9 @@ h2 {
   .buttons {
     flex-direction: column;
     align-items: center;
+  }
+
+  .nav-header {
+    font-size: 28px;
   }
 }

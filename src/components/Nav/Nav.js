@@ -62,9 +62,3 @@ export const Nav = () => {
     </>
   );
 };
-
-{
-  /* <NavLink to="/home">
-      <button className="home-button">Home</button>
-    </NavLink> */
-}
