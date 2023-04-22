@@ -9,7 +9,14 @@
 
 .nav-header {
   cursor: pointer;
-  margin:15px  
+  margin: 15px;
+  color: black 
+}
+
+.nav-header:hover {
+  scale: 1.1;
+  transition: 0.8ms;
+  color: rgb(142, 142, 83)
 
 }
 
@@ -40,7 +47,8 @@ h1, h2 {
   scale: 1.3;
   cursor: pointer;
   transition: 0.8ms;
-  background-color: rgb(194, 194, 120);
+  color: rgb(194, 194, 120);
+  background-color: black;
 } 
 
 @media screen and (max-width: 640px) {
