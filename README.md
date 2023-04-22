@@ -1,6 +1,8 @@
-[Spells Are Us](https://spells-are-us.vercel.app/home)
+# [Spells Are Us](https://spells-are-us.vercel.app/home)
 
 ## Abstract
+
+Spells Are Us is a fun react application that allows Harry Potter fans to find interesting spells, favorite the ones they love so they can memorize them for when playing with friends or kids. There is interesting information provided about wands, as they are directly related to the spells. If you ever wanted to memorize spells for any reason this is the app for you!
 
 ***
 
@@ -26,7 +28,7 @@
 5. Or visit https://spells-are-us.vercel.app/home
 ***
 ### Preview of App:
-![]()
+[](https://user-images.githubusercontent.com/116752855/233789721-26e3c7c6-70f0-4a94-b676-344d863fdb3b.gif)
 ***
 
 ### Context:
@@ -48,8 +50,12 @@ Approximate hours to completion: 30
 
 **Win:**
 
-
+- Built a unique app tailored for a niche audience in a shortened time frame
+- Dynamic Routing
+- App looks great on phone as well as computer
 
 **Challenge:**
 
+- Constrained timeline to build and deploy App
+- CSS responsiveness 
 

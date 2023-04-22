@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Roboto+Mono:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Roboto+Mono:wght@300&display=swap");
 
 .spell-card {
   display: flex;
@@ -18,14 +18,14 @@
 
 .spell-button {
   width: 15%;
-  margin:10px;
+  margin: 10px;
   background-color: lightgoldenrodyellow;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .spell-button:hover {
-  background-color:  rgb(142, 142, 83);
+  background-color: rgb(142, 142, 83);
   scale: 1.05;
   transition: 0.5ms;
 }
@@ -33,11 +33,11 @@
 .description {
   text-align: center;
   font-size: 25px;
-  font-family: 'Baskervville', serif;
+  font-family: "Baskervville", serif;
   margin-bottom: 20px;
   margin-top: 5px;
 }
 
 .spell-card > h1 {
-  margin:5px
+  margin: 5px;
 }
