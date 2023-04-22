@@ -5,7 +5,6 @@
   overflow: auto;
 }
 
-
 @media screen and (max-width: 655px) {
   .spells-container {
     justify-content: center;

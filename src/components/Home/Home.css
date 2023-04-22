@@ -33,10 +33,9 @@
   }
 }
 
-
 @media screen and (max-width: 400px) {
   .wand-image {
-    height: 250px
+    height: 250px;
   }
 
   .home-title {

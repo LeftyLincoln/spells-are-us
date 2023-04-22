@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Roboto+Mono:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Roboto+Mono:wght@300&display=swap");
 
 .favorite-card {
   display: flex;
@@ -19,33 +18,32 @@
 }
 
 .favorite-button {
-  margin:10px;
+  margin: 10px;
   background-color: lightgoldenrodyellow;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .favorite-button:hover {
-  color:  rgb(142, 142, 83);
+  color: rgb(142, 142, 83);
   background-color: black;
   scale: 1.05;
   transition: 0.5ms;
-  
 }
 
 .favorite-description {
-  font-family: 'Baskervville', serif;
+  font-family: "Baskervville", serif;
   text-align: center;
   font-size: 25px;
 }
 
 .favorite-header {
-  margin: 5px
+  margin: 5px;
 }
 
 @media screen and (max-width: 650px) {
   .favorite-header {
-    font-size: 24px
+    font-size: 24px;
   }
 
   .favorite-description {
@@ -55,7 +53,7 @@
 
 @media screen and (max-width: 500px) {
   .favorite-header {
-    font-size: 18px
+    font-size: 18px;
   }
 
   .favorite-description {
