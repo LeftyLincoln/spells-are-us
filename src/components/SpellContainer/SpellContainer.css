@@ -6,7 +6,7 @@
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 655px) {
   .spells-container {
     justify-content: center;
   }

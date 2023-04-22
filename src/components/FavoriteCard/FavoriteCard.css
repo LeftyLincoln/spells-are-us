@@ -42,3 +42,23 @@
 .favorite-header {
   margin: 5px
 }
+
+@media screen and (max-width: 650px) {
+  .favorite-header {
+    font-size: 24px
+  }
+
+  .favorite-description {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .favorite-header {
+    font-size: 18px
+  }
+
+  .favorite-description {
+    font-size: 14px;
+  }
+}

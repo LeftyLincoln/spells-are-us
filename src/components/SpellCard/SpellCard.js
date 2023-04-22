@@ -13,7 +13,7 @@ export const SpellCard = ({name, description, id, addFavorite, favorites}) => {
     if (isFavorite) {
       setDisable(true)
     }
-  }, [])
+  },[favorites, id])
 
 
   return (
