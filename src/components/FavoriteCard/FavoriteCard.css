@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 6px groove rgb(56, 211, 203);
+  border: 6px groove lightgoldenrodyellow;
   width: 45%;
   margin: 10px;
   border-radius: 12px;
@@ -15,20 +15,22 @@
 .favorite-card:hover {
   scale: 1.05;
   transition: 0.5ms;
-  background-color: rgb(146, 205, 202);
+  background-color: rgb(194, 194, 120);
 }
 
 .favorite-button {
   margin:10px;
-  background-color: rgb(152, 179, 177);
+  background-color: lightgoldenrodyellow;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .favorite-button:hover {
-  background-color: rgb(76, 128, 124);
+  color:  rgb(142, 142, 83);
+  background-color: black;
   scale: 1.05;
   transition: 0.5ms;
+  
 }
 
 .favorite-description {
