@@ -5,13 +5,13 @@ describe('Show All Spells', () => {
       "https://hp-api.onrender.com/api/spells",
       { fixture: "spells.json" }
     )
-    cy.visit("http://localhost:3000/home")
+    cy.visit("https://spells-are-us.vercel.app/home")
   })
 
   it("should change url when you visit allspells", () => {
-    cy.url().should('eq', "http://localhost:3000/home")
+    cy.url().should('eq', "https://spells-are-us.vercel.app/home")
     cy.get('[href="/allSpells"] > button').click()
-    cy.url().should('eq', "http://localhost:3000/allSpells")
+    cy.url().should('eq', "https://spells-are-us.vercel.app/allSpells")
   })
 
   it('should show 5 spells when you click all spells button', () => {

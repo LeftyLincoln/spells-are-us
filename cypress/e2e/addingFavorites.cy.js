@@ -5,11 +5,11 @@ describe('Home Page', () => {
       "https://hp-api.onrender.com/api/spells",
       { fixture: "spells.json" }
     )
-    cy.visit("http://localhost:3000/home")
+    cy.visit("https://spells-are-us.vercel.app/home")
   })
 
   it('should display a message if no favorites are saved', () => {
-    cy.visit("http://localhost:3000/favoriteSpells")
+    cy.visit("https://spells-are-us.vercel.app/favoriteSpells")
     cy.get('.no-fav-message').contains("You haven't saved any spells yet...")
   })
 

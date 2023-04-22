@@ -5,7 +5,7 @@ describe('Wand Info', () => {
       "https://hp-api.onrender.com/api/spells",
       { fixture: "spells.json" }
     )
-    cy.visit("http://localhost:3000/wandInfo")
+    cy.visit("https://spells-are-us.vercel.app/wandInfo")
   })
 
 
@@ -13,7 +13,7 @@ describe('Wand Info', () => {
     cy.get('.quote').contains("The wand chooses the wizard... it's not always clear why.")
     cy.get('.facts > :nth-child(3)').contains("Ollivander & Gregorovitch")
     cy.get('.facts > :nth-child(5)').contains("Unicorn Hair")
-    cy.url().should('eq', "http://localhost:3000/wandInfo")
+    cy.url().should('eq', "https://spells-are-us.vercel.app/wandInfo")
     cy.get('.wand-image-info').should('have.attr', 'src').should('include','wandImage')
   })
 })

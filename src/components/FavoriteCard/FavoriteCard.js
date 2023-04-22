@@ -13,7 +13,7 @@ export const FavoriteCard = ({name, description, id, deleteSpell}) => {
 }
 
 FavoriteCard.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   deleteSpell: PropTypes.func.isRequired

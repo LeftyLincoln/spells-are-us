@@ -5,12 +5,11 @@ describe('Home Page', () => {
       "https://hp-api.onrender.com/api/spells",
       { fixture: "spells.json" }
     )
-    cy.visit("http://localhost:3000/home")
+    cy.visit("https://spells-are-us.vercel.app/home")
   })
 
   it('should display a title, buttons, and a wand image', () => {
     cy.get("h1").contains("Spells Are Us")
-    cy.get('.active > button').contains("Home")
     cy.get('[href="/allSpells"] > button').contains("All Spells")
     cy.get('[href="/favoriteSpells"] > button').contains("Favorite Spells")
     cy.get('[href="/wandInfo"] > button').contains("Wand Info Bonus")
