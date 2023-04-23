@@ -11,3 +11,63 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media screen and (max-width: 400px) {
+  .wand-image {
+    height: 250px;
+  }
+
+  .home-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .favorite-header {
+    font-size: 18px;
+  }
+
+  .favorite-description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .facts {
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
+  .wand-image-info {
+    height: 60px;
+  }
+
+  .quote {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-header {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .spells-container {
+    justify-content: center;
+  }
+
+  .favorite-header {
+    font-size: 24px;
+  }
+
+  .favorite-description {
+    font-size: 20px;
+  }
+}
+
+

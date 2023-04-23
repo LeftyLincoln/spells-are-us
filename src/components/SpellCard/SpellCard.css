@@ -30,6 +30,11 @@
   transition: 0.5ms;
 }
 
+.spell-button:disabled {
+  background-color: black;
+  pointer-events: none;
+}
+
 .description {
   text-align: center;
   font-size: 25px;

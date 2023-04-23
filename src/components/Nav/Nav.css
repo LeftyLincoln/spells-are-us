@@ -59,13 +59,4 @@ h2 {
   background-color: black;
 }
 
-@media screen and (max-width: 640px) {
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .nav-header {
-    font-size: 28px;
-  }
-}
