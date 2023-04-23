@@ -26,6 +26,9 @@ export const Nav = () => {
       <Route path="/allSpells">
         <div className="nav-bar">
           <div className="buttons">
+            <NavLink to="/home">
+              <button className="home-button">Home</button>
+            </NavLink>
             <NavLink to="/favoriteSpells">
               <button className="fav-spell-button">Favorite Spells</button>
             </NavLink>
@@ -38,6 +41,9 @@ export const Nav = () => {
       <Route path="/favoriteSpells">
         <div className="nav-bar">
           <div className="buttons">
+            <NavLink to="/home">
+              <button className="home-button">Home</button>
+            </NavLink>
             <NavLink to="/allSpells">
               <button className="allSpells-button">All Spells</button>
             </NavLink>
@@ -50,6 +56,9 @@ export const Nav = () => {
       <Route path="/wandInfo">
         <div className="nav-bar">
           <div className="buttons">
+            <NavLink to="/home">
+              <button className="home-button">Home</button>
+            </NavLink>
             <NavLink to="/allSpells">
               <button className="allSpells-button">All Spells</button>
             </NavLink>
