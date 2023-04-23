@@ -28,7 +28,7 @@ Spells Are Us is a fun react application that allows Harry Potter fans to find i
 5. Or visit https://spells-are-us.vercel.app/home
 ***
 ### Preview of App:
-[](https://user-images.githubusercontent.com/116752855/233789721-26e3c7c6-70f0-4a94-b676-344d863fdb3b.gif)
+![spells-are-us](https://user-images.githubusercontent.com/116752855/233789721-26e3c7c6-70f0-4a94-b676-344d863fdb3b.gif)
 ***
 
 ### Context:
