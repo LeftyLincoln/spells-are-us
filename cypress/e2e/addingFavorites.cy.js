@@ -12,6 +12,7 @@ describe("Home Page", () => {
   });
 
   it("should allow the user to save favorite spells and delete spells", () => {
+    cy.get(".favorite-card").should("have.length", 0);
     cy.get('[href="/allSpells"] > button').click();
     cy.get(":nth-child(1) > .spell-button").click();
     cy.get(":nth-child(5) > .spell-button").click();

@@ -3,14 +3,14 @@ describe("Error", () => {
     cy.intercept("GET", "https://hp-api.onrender.com/api/spells", {
       fixture: "spells.json",
     });
-    cy.visit("http://localhost:3000/home");
+    cy.visit("https://spells-are-us.vercel.app/home");
   });
 
   it("should display a message if no cards properly show", () => {
     cy.intercept("GET", "https://hp-api.onrender.com/api/spells", {
       statusCode: 404,
     });
-    cy.visit("http://localhost:3000/allSpells");
+    cy.visit("https://spells-are-us.vercel.app/allSpells");
     cy.get("main");
     cy.get("p").should(
       "have.text",
