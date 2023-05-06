@@ -2,7 +2,7 @@ import React from "react";
 import "./Nav.css";
 import { NavLink, Route } from "react-router-dom";
 
-export const Nav = () => {
+export const Nav = ({clearSearch}) => {
   return (
     <>
       <NavLink to="/home">
@@ -27,13 +27,13 @@ export const Nav = () => {
         <div className="nav-bar">
           <div className="buttons">
             <NavLink to="/home">
-              <button className="home-button">Home</button>
+              <button onClick={clearSearch} className="home-button">Home</button>
             </NavLink>
             <NavLink to="/favoriteSpells">
-              <button className="fav-spell-button">Favorite Spells</button>
+              <button onClick={clearSearch} className="fav-spell-button">Favorite Spells</button>
             </NavLink>
             <NavLink to="/wandInfo">
-              <button className="wand-info-button">Wand Info Bonus</button>
+              <button onClick={clearSearch} className="wand-info-button">Wand Info Bonus</button>
             </NavLink>
           </div>
         </div>

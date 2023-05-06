@@ -4,6 +4,7 @@ import { SpellContainer } from "../SpellContainer/SpellContainer";
 import { FavoriteContainer } from "../FavoriteContainer/FavoriteContainer";
 import { WandInfo } from "../WandInfo/WandInfo";
 import { Home } from "../Home/Home";
+import { Form } from "../Form/Form";
 import "./App.css";
 import { Switch, Route, Redirect } from "react-router-dom";
 
@@ -11,6 +12,7 @@ const App = () => {
   const [spells, setSpells] = useState([]);
   const [error, setError] = useState("");
   const [favorites, setFavorites] = useState([]);
+  const [filteredSpells, setFilteredSpells] = useState('')
 
   const getSpells = async () => {
     try {
@@ -38,19 +40,39 @@ const App = () => {
     setFavorites(leftFavorites);
   };
 
+  const matchedSpells = (input) => {
+    const searchedSpell = spells.filter(spell => {
+      console.log(input.toLowerCase())
+      return spell.name.toLowerCase().includes(input.toLowerCase())
+    })
+    if (searchedSpell.length > 0) {
+      setFilteredSpells(searchedSpell)
+    }
+  }
+  const clearSearch = () => {
+    setFilteredSpells("")
+  }
+
+
   return (
     <main className="app">
-      <Nav />
+      <Nav clearSearch={clearSearch}/>
       {error && <p>{error}</p>}
       <Switch>
         <Route
           path="/allSpells"
           render={() => (
-            <SpellContainer
-              spells={spells}
-              addFavorite={addFavorite}
-              favorites={favorites}
-            />
+            <>
+              <Form 
+                spells={spells}
+                matchedSpells={matchedSpells}
+              />
+              <SpellContainer
+                spells={filteredSpells || spells}
+                addFavorite={addFavorite}
+                favorites={favorites}
+                />
+            </>
           )}
         />
         <Route
